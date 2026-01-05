@@ -1,7 +1,7 @@
 def ft_garden_summary() -> None:
-    name : str = input("Enter garden name: ")
-    num : str = input("Enter number of plants: ")
+    name: str = input("Enter garden name: ")
+    num: str = input("Enter number of plants: ")
 
     print(f"Garden: {name}")
     print(f"Plants: {num}")
-    print(f"Status: Growing well!")
+    print("Status: Growing well!")

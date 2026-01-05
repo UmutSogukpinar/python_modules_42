@@ -1,11 +1,9 @@
-def print_rec(i : int, limit : int) -> None:
-    if i > limit:
+def ft_count_harvest_recursive(i: int = 0, limit: int = 0) -> None:
+    if i == 0:
+        limit: int = int(input("Days until harvest: "))
+    if i == limit + 1:
+        print("Harvest time!")
         return
-    print(f"Day {i}")
-    print_rec(i + 1, limit)
-
-
-def ft_count_harvest_recursive() -> None:
-    day : int = int(input("Days until harvest: "))
-    print_rec(1, day)
-    print("Harvest time!")
+    else:
+        print(f"Day {i}")
+        ft_count_harvest_recursive(i + 1, limit)

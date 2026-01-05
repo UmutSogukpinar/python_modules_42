@@ -1,4 +1,4 @@
-def ft_seed_inventory(seed : str, amount : int, quantity: int) -> None:
+def ft_seed_inventory(seed: str, amount: int, quantity: int) -> None:
     match quantity:
         case "packets":
             print(f"{seed.capitalize()} seeds: {amount} packets available")
@@ -8,4 +8,3 @@ def ft_seed_inventory(seed : str, amount : int, quantity: int) -> None:
             print(f"{seed.capitalize()} seeds: covers {amount} square meter")
         case _:
             print("Unknown quantity!")
-
