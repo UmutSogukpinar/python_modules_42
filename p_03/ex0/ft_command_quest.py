@@ -4,8 +4,8 @@ import sys
 def main() -> None:
     print("=== Command Quest ===")
 
-    argv = sys.argv
-    argc = len(argv)
+    argv: list[str] = sys.argv
+    argc: int = len(argv)
 
     print(f"Program name: {argv[0]}")
 

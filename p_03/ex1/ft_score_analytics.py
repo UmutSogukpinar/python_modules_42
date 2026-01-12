@@ -11,14 +11,14 @@ def main() -> None:
         )
         return
 
-    scores = [int(arg) for arg in sys.argv[1:]]
+    scores: list[int] = [int(arg) for arg in sys.argv[1:]]
 
-    total_players = len(scores)
-    total_score = sum(scores)
-    average_score = total_score / total_players
-    high_score = max(scores)
-    low_score = min(scores)
-    score_range = high_score - low_score
+    total_players: int = len(scores)
+    total_score: int = sum(scores)
+    average_score: int = total_score / total_players
+    high_score: int = max(scores)
+    low_score: int = min(scores)
+    score_range: int = high_score - low_score
 
     print(f"Scores processed: {scores}")
     print(f"Total players: {total_players}")
